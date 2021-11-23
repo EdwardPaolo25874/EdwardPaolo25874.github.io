@@ -206,7 +206,89 @@
 
       </div>
     </section><!-- Fin charts seeccion contador-->
+    
+  <!-- ======= Panel de chart graficos ======= -->
+ <section id="grafics" class="grafics">
+  <div class="container" data-aos="fade-up">
+    <div class="row">
 
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Descargas 2021</h5>
+
+            <!-- Linea grafica chart -->
+            <div id="lineChart"></div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                new ApexCharts(document.querySelector("#lineChart"), {
+                  series: [{
+                    name: "Descargas Lenpic",
+                    data: [150, 141, 135, 151, 149, 162, 169, 191, 248]
+                  }],
+                  chart: {
+                    height: 350,
+                    type: 'line',
+                    zoom: {
+                      enabled: false
+                    }
+                  },
+                  dataLabels: {
+                    enabled: false
+                  },
+                  stroke: {
+                    curve: 'straight'
+                  },
+                  grid: {
+                    row: {
+                      colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
+                      opacity: 0.5
+                    },
+                  },
+                  xaxis: {
+                    categories: ['Apr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+                  }
+                }).render();
+              });
+            </script>
+            <!-- Fin linea grafica Chart -->
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Comunidad de usuarios</h5>
+
+            <!--  grafico Pie Chart -->
+            <div id="pieChart"></div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                new ApexCharts(document.querySelector("#pieChart"), {
+                  series: [144, 155, 153, 143, 52],
+                  chart: {
+                    height: 350,
+                    type: 'pie',
+                    toolbar: {
+                      show: true
+                    }
+                  },
+                  labels: ['Norteamérica', 'Sudamérica', 'Europa', 'Australia ', 'Otros']
+                }).render();
+              });
+            </script>
+            <!-- fin grafico pie Chart -->
+       </div>
+    </div>
+
+  </div>
+</section><!--FIN Panel de chart graficos -->
+      
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="footer-top">
@@ -268,6 +350,7 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>     
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
