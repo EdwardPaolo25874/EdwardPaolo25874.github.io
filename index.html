@@ -1,37 +1,182 @@
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <link rel="stylesheet" href="css/style.css">
-	<title>Responsive Layout</title>
+<!DOCTYPE html>
+<html lang="es">
+
+ <head>
+        <!-- Seccion de pestaña -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
 
 
+    <title>Translogic</title>
 
-</head>
-<body>
-	<div class="row">
-	<h1>Our Menu</h1>
-  <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-    <p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Deserunt ab quia eum possimus debitis illo consequuntur cum impedit! Non hic ratione minus reiciendis esse laboriosam rem fugit, quam ut iure!</p>
-  	<p id="p1">Chicken</p>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-  	</div>
+    <!-- Fuentes Google  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
 
-  
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+    </svg>
 
-  <div class="col-lg-4 col-md-6 col-sm-12" id="container"><p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Quis, iste, nostrum dignissimos unde officiis doloremque debitis fugit ut! Voluptate odit nam unde harum aliquam aperiam quibusdam quod corrupti provident pariatur!</p>
 
-  	<p id="p2">Beef</p>
+    
+ </head>    <!-- Fin head -->
 
+ <!--navbar -->
+ <body>
+ <header id="header" class="d-flex align-items-center">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand; padding:40" href="#">
+            <img src="./assets/img/logo1.png" style="padding:10px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="servicios.html">SERVICIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">PRECIOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="clientes.html">DESCARGAR</a>
+                </li>   
+                <li class="nav-item">
+                  <a class="nav-link" href="clientes.html">CONTACTO</a>
+              </li>              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+  </header>
+ <!-- Fin navbar-->
+
+ <div style="padding: 40px;">
+ <!-- inicio Section -->
+
+ <div style="background-color: white; font-family: 'Poppins', sans-serif;"> 
+  <section id="inicio"class="py-5 ">
+   <div class="container py-5">
+     <div class="row">
+       <div class="col-lg-6 order-2 order-lg-1">
+         <p class="h6 mb-1 text-uppercase text-primary mb-3">Bienvenido a Translogic</p>
+         <h2 class="mb-4">ESTÁS LISTO PARA AUMENTAR TU RENDIMIENTO</h2>
+         <p class="text-small text-muted">Evalúa tu ruta de crecimiento junto con nosotros.</p>
+         <div class="p-2" ></div>
+         <button type="button" class="btn-lg" style="background-color: #fff200" data-toggle="modal" data-target="#modal1">
+           DESCARGAR
+         </button>
+       </div>
+       <div class="col-lg-5 ml-auto mb-4 mb-lg-0 order-1 order-lg-2">
+         <div class="p-2 "><img class="img-fluid" src="assets/img/1.jpg" alt=""></div>
+       </div>
+     </div>
+   </div>
+
+    <!-- inicio card -->
+    
+ <div class="container py-5">   
+   <div class="card-group">
+     <div class="card">
+      
+       <div class="card-body" style="background-color:#000000; color: #f5f5f5;">
+         <h5 class="card-title text-uppercase" >organiza tus rutas de trnsporte</h5>
+         <p class="card-text">Visualiza tus recorridos de transporte y gestiona tu vehiculo.</p>
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+       </div>
+     </div>
+     <div class="card">
+      
+      <div class="card-body" style="background-color:#D6E6F2;">
+        <h5 class="card-title text-uppercase">Mejora tu rendimiento con estos pasos</h5>
+        <p class="card-text">Consigue información y equipos que te ayuden a  mejorar el mantenimiento de tu vehículo.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="card">
+    
+      <div class="card-body" style="background-color:#000000; color: #f5f5f5;">
+        <h5 class="card-title text-uppercase">Sé parte de nuestro equipo</h5><p></p>
+        <p class="card-text">Afiliate si eres parte de Negocios vinculados al transporte terrestre.</p>        
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+      </div>
+    </div>
+   </div>
   </div>
 
-  <div class="col-lg-4 col-md-12 col-sm-12" id="container"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, earum omnis natus voluptate, repudiandae inventore molestias eos reprehenderit corrupti nesciunt animi ea obcaecati vero numquam porro quidem? Numquam at, et!</p>
 
-  	<p  id="p3">Sushi</p>
+ <!-- fin card -->
+  </section>
 
-  </div>
+ <!-- desplegable de boton-->
+ <div class="modal fade bd-example-modal-lg" id="modal1" tabindex="-2" role="dialog"
+ aria-labelledby="modal1Label" aria-hidden="true">
+ <div class="modal-dialog modal-lg" role="document">
+   <div class="modal-content">
+     <div class="modal-header">
+       <h5 class="modal-title; text-uppercase" id="modal3label" style="color:blue; font-family: 'Oswald', sans-serif; padding:20px">
+         Translogic. </h5>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+         <span aria-hidden="true">&times;</span>
+       </button>
+     </div>
+     <div class="modal-body">
+       <img class="img-fluid" src="./assets/img/descarga.jpg" alt="">
+       <p></p>           
+                  
+     </div>
+     <p style="color:blue; text-align:justify; padding: 40px">
+     </p>
+     <div class="modal-footer">
+       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+     </div>
+   </div>
+ </div>   
+</div>  
+<!-- fin desplegable de boton-->
 
-	</div>	
 
+ <!-- Fin inicio Section -->
+
+
+
+  <!-- footer -->
+   
+  <!--Fin footer -->
 </body>
+
 </html>
